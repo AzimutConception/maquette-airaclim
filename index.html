@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climatisation Précision — Conçue pour le Silence</title>
+<meta name="description" content="Un système de climatisation conçu pour disparaître — à la vue, comme à l'oreille.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-brand">Climatisation Précision</div>
+  <div id="loader-bar-track"><div id="loader-bar"></div></div>
+  <div id="loader-percent">0%</div>
+</div>
+
+<!-- Fixed header -->
+<header class="site-header">
+  <nav>
+    <span class="logo">Climatisation Précision</span>
+    <ul class="nav-links">
+      <li><a href="#" data-target="10">Ingénierie</a></li>
+      <li><a href="#" data-target="40">Performance</a></li>
+      <li><a href="#faq" data-anchor="faq">FAQ</a></li>
+      <li><a href="#devis" data-anchor="devis" class="nav-cta">Devis</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero-standalone" id="hero">
+  <span class="section-label hero-label">001 / Introduction</span>
+  <h1 class="hero-heading">
+    <span class="word-wrap"><span class="word">Le</span></span>
+    <span class="word-wrap"><span class="word">Son</span></span>
+    <span class="word-wrap"><span class="word">du</span></span>
+    <span class="word-wrap"><span class="word accent-word">Silence</span></span>
+  </h1>
+  <p class="hero-tagline">Un système de climatisation conçu pour disparaître — à la vue, comme à l'oreille.</p>
+  <div class="scroll-indicator">
+    <span>Défiler</span>
+    <svg width="14" height="22" viewBox="0 0 14 22" fill="none">
+      <path d="M7 1V21M7 21L1 15M7 21L13 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Canvas -->
+<div class="canvas-wrap" id="canvasWrap">
+  <canvas id="canvas"></canvas>
+</div>
+
+<!-- Dark overlay -->
+<div id="dark-overlay"></div>
+
+<!-- Scroll container -->
+<div id="scroll-container">
+
+  <section class="scroll-section section-content align-left"
+           data-enter="8" data-leave="20" data-animation="slide-left">
+    <div class="section-inner">
+      <span class="section-label">002 / Carrosserie</span>
+      <h2 class="section-heading">Une carrosserie<br>pensée pour durer.</h2>
+      <p class="section-body">Coque en polymère renforcé, traitée anti-UV et anti-corrosion. Un assemblage précis au dixième de millimètre, conçu pour rester impeccable des années durant, exposée aux éléments comme au regard.</p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-content align-right"
+           data-enter="22" data-leave="34" data-animation="scale-up">
+    <div class="section-inner">
+      <span class="section-label">003 / Ventilation</span>
+      <h2 class="section-heading">Un ventilateur<br>à l'équilibre parfait.</h2>
+      <p class="section-body">Pales équilibrées au dixième de gramme près, montées sur roulement à faible friction. C'est ce soin apporté à la rotation, invisible à l'œil, qui rend le silence possible.</p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-content align-left"
+           data-enter="36" data-leave="46" data-animation="clip-reveal">
+    <div class="section-inner">
+      <span class="section-label">004 / Échangeur thermique</span>
+      <h2 class="section-heading">Un échangeur<br>en cuivre pur.</h2>
+      <p class="section-body">Le cuivre conduit la chaleur bien mieux que l'aluminium encore utilisé ailleurs. À la clé : une montée en température plus rapide, et une résistance à la corrosion nettement supérieure sur la durée.</p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-content align-right"
+           data-enter="48" data-leave="58" data-animation="slide-right">
+    <div class="section-inner">
+      <span class="section-label">005 / Compresseur</span>
+      <h2 class="section-heading">Le cœur du<br>système, protégé.</h2>
+      <p class="section-body">Compresseur rotatif haute efficacité, piloté par une carte électronique qui ajuste la puissance en temps réel — pour ne consommer que le nécessaire, sans jamais forcer inutilement.</p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-stats"
+           data-enter="62" data-leave="78" data-animation="stagger-up">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-value-row"><span class="stat-number" data-value="19" data-decimals="0">0</span><span class="stat-suffix">dB</span></div>
+        <span class="stat-label">Niveau sonore</span>
+      </div>
+      <div class="stat">
+        <div class="stat-value-row"><span class="stat-number" data-value="42" data-decimals="0">0</span><span class="stat-suffix"></span></div>
+        <span class="stat-label">Composants de précision</span>
+      </div>
+      <div class="stat">
+        <div class="stat-value-row"><span class="stat-number" data-value="5.2" data-decimals="1">0</span><span class="stat-suffix">kW</span></div>
+        <span class="stat-label">Puissance frigorifique</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="scroll-section section-cta align-left"
+           data-enter="84" data-leave="100" data-animation="fade-up" data-persist="true">
+    <div class="section-inner">
+      <span class="section-label">006 / Devis</span>
+      <h2 class="section-heading">Silencieux,<br>par nature.</h2>
+      <p class="section-body">Chaque détail que vous venez de découvrir est inclus dans votre installation. Recevez votre devis personnalisé, sans engagement.</p>
+      <a href="#devis" class="cta-button" data-anchor="devis">Demander un devis</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- Testimonials -->
+<section class="testimonials-section" id="avis">
+  <div class="section-eyebrow-row">
+    <span class="section-label">007 / Avis clients</span>
+    <h2 class="static-heading">Ils ont choisi<br>le silence.</h2>
+  </div>
+  <div class="testimonials-grid">
+    <blockquote class="testimonial">
+      <p class="testimonial-quote">« Installation impeccable et un silence total, même la nuit. On a complètement oublié qu'elle tournait. »</p>
+      <cite class="testimonial-author">Camille R. <span>— Lyon</span></cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p class="testimonial-quote">« Le design est aussi soigné que la performance. Elle se fond dans le salon sans jamais se faire remarquer. »</p>
+      <cite class="testimonial-author">Antoine M. <span>— Bordeaux</span></cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p class="testimonial-quote">« Un vrai gain de confort cet été, sans le bruit de fond auquel on s'attendait. »</p>
+      <cite class="testimonial-author">Sophie D. <span>— Nantes</span></cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-eyebrow-row">
+    <span class="section-label">008 / FAQ</span>
+    <h2 class="static-heading">Questions<br>fréquentes.</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Comment se déroule l'installation ?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner"><p>Un technicien qualifié intervient à votre domicile pour une installation complète, généralement réalisée en une seule journée, avec un minimum de perturbations.</p></div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quel est le niveau sonore réel une fois installée ?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner"><p>L'unité fonctionne à partir de 19 dB — un niveau proche du silence, pensé pour les chambres et les espaces de vie calmes.</p></div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quelle surface une unité peut-elle couvrir ?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner"><p>Cela dépend de la taille de la pièce et de son isolation. Nos conseillers déterminent la puissance adaptée lors de l'étude de votre devis.</p></div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quelle garantie est proposée ?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner"><p>Chaque installation est couverte par une garantie de 3 ans, pièces et main-d'œuvre, extensible sur demande.</p></div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quel entretien est nécessaire ?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner"><p>Un nettoyage des filtres est recommandé chaque saison, complété par une révision professionnelle annuelle pour préserver les performances.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote request -->
+<section class="quote-section" id="devis">
+  <div class="quote-intro">
+    <span class="section-label">009 / Devis</span>
+    <h2 class="static-heading">Parlons de<br>votre projet.</h2>
+    <p class="quote-copy">Renseignez vos coordonnées ci-contre — un conseiller étudie votre demande et vous recontacte sous 24h avec un devis personnalisé.</p>
+  </div>
+  <form class="quote-form" id="quoteForm" novalidate>
+    <div class="form-row">
+      <label for="qName">Nom complet</label>
+      <input type="text" id="qName" name="name" required autocomplete="name">
+    </div>
+    <div class="form-row form-row-split">
+      <div>
+        <label for="qEmail">Email</label>
+        <input type="email" id="qEmail" name="email" required autocomplete="email">
+      </div>
+      <div>
+        <label for="qPhone">Téléphone</label>
+        <input type="tel" id="qPhone" name="phone" required autocomplete="tel">
+      </div>
+    </div>
+    <div class="form-row">
+      <label for="qPostal">Code postal</label>
+      <input type="text" id="qPostal" name="postal" required autocomplete="postal-code">
+    </div>
+    <div class="form-row">
+      <label for="qMessage">Votre projet</label>
+      <textarea id="qMessage" name="message" rows="4" placeholder="Type de logement, pièce à climatiser, contraintes particulières..."></textarea>
+    </div>
+    <button type="submit" class="cta-button quote-submit">Envoyer ma demande</button>
+    <p class="quote-success" id="quoteSuccess" role="status">Merci ! Votre demande a bien été reçue — un conseiller vous recontacte sous 24h.</p>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <span>© 2026 Climatisation Précision. Tous droits réservés.</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
